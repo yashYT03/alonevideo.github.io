@@ -1,0 +1,102 @@
+:root {
+  --purple: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(d.jpg);
+}
+
+.container .heading {
+  font-size: 3rem;
+  margin: 2rem 0;
+  text-transform: capitalize;
+  color: var(--purple);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.video-container .video {
+  height: 15rem;
+  width: 25rem;
+  margin: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.video-container .video video {
+  height: 100%;
+  width: 100%;
+  /* object-fit: cover; */
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.video-container .video video:hover {
+  transition: 0.2s linear;
+}
+
+.video-container .video .active {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 80%;
+  box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.video-container .video .active:hover {
+  transition: none;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ 
+  height: auto;
+  width: 100vw;
+  font-family: "Open sans";
+  padding-top: 10px;
+  color: #624646;
+}
+
+p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+ p{
+  font-size: 0.001rem;
+  font-weight: 100;
+  text-transform: capitalize;
+  line-height: 3rem;
+  color:rgb(35, 91, 115);
+  
+}
+
